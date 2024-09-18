@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,rgb(243, 213, 131),
+    rgba(247, 247, 141, 0.877),rgb(248, 187, 151));
+    width: 100%;
+    height: 100vh;
+
+}
+h1{
+    color: orange;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
+
+
+}
+.container{
+    height: 70vh;
+    width: 35%;
+    background-color: rgb(252, 207, 123);
+    margin: 3rem auto;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 15px 4px brown;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    
+}
+.container input{
+    color: brown;
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    margin:1rem auto;
+    border: none;
+    font-weight: 800;
+
+}
+.container label{
+    margin-top: 1rem;
+    font-style: italic;
+    color:brown;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+::placeholder{
+    text-align: center;
+    color:brown;
+    font-weight: 600;
+    
+
+}
+
+button{
+       width: 6rem;
+       height: 2rem;
+       border: none;
+       font-weight: 600;
+       background-color:orange;
+       color: white;
+       border-radius: 1rem;
+       box-shadow: 1px 1px 15px 4px white ;
+       transition: 0.6s all ease; 
+       margin: auto; 
+       transition: 0.5s all ease-in-out; 
+   }
+   button:hover{
+    background-color: white;
+    color: brown;
+    transform: scale(1.2);
+    cursor: pointer;
+
+   }
+
+   #firstunit{
+    width: 15rem;
+    height: 5vh;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: brown;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    margin: auto;
+   }
+   #secondunit{
+    width: 15rem;
+    font-size: 0.9rem;
+    height: 5vh;
+    font-weight: 600;
+    color: brown;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    margin: auto;
+}
+
+body{
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+}
+ 
+
+@media(max-width:1030px){
+    .container{
+        height:40rem;
+        width: 50%;
+    } 
+
+}
+@media(max-width:850px){
+    button{
+       font-size: 0.8; 
+
+    }
+}
+@media(max-width:630px){
+
+    .container{
+        
+        width: 70%;
+    }
+}
+@media(max-width:431px){
+    #firstunit{
+        width: 8rem;
+        height: 4vh;
+    }
+    #secondunit{
+        width: 8rem;
+        height: 4vh;
+    }
+    h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+
+}
+@media(max-width:350px){
+    
+    h1{
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+
+}
